@@ -1,0 +1,16 @@
+{
+  "model": "sonnet",
+  "env": {
+    "MAX_THINKING_TOKENS": "10000",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "50",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "haiku"
+  },
+  "_comment_disabled_mcps": "Décommenter pour skip les MCPs ECC qui font doublon avec ta config existante",
+  "_disabledMcpServers": [
+    "github",
+    "context7",
+    "playwright",
+    "sequential-thinking",
+    "memory"
+  ]
+}

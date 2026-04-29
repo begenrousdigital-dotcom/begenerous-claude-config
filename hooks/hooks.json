@@ -1,0 +1,20 @@
+{
+  "hooks": [
+    {
+      "type": "SessionStart",
+      "command": "$HOME/.claude/hooks/load-context.sh",
+      "description": "Charge les instincts et le dernier checkpoint du projet"
+    },
+    {
+      "type": "SessionEnd",
+      "command": "$HOME/.claude/hooks/save-context.sh",
+      "description": "Sauvegarde le contexte de la session pour reprise"
+    },
+    {
+      "type": "PostToolUse",
+      "matcher": { "tool": "Bash" },
+      "command": "$HOME/.claude/hooks/suggest-compact.sh",
+      "description": "Suggère /compact aux moments propices"
+    }
+  ]
+}
